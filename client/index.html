@@ -1,18 +1,40 @@
+
 <html>
   <head>
+    <meta charset='utf-8'>
     <title>RPSLS</title>
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' type='text/css'>
   </head>
 
   <body>
-    <center>
-      <h1>Rock, Paper, Scissors!</h1>
-      <h2>and Lizard and Spock?</h2>
-      <div class="clientMove"></div>
-      <div class="serverMove"></div>
-      <div class="results"></div>
-      <div class="buttons"></div>
-    </center>
-    
+    <div class = 'jumbotron'>
+      <div class='container'>
+
+        <div class="page-header">
+          <h1>Rock, Paper, Scissors!
+          <small>...and Lizard and Spock?</small></h1>
+        </div>
+
+      </div>
+
+      <div class='panel panel-default'>
+        <div class='panel-body'>
+
+          <center>
+            <div class="clientMove"></div><!-- Displays what the client plays -->
+            <div class="serverMove"></div><!-- Displays what the server plays -->
+            <div class="alert"></div><!-- Will hold alert DOM element. Type varies on result -->
+
+            <div class="row"></div><!-- Prints out the win/loss/tie record -->
+            <div class="buttons"></div><!-- Holds the 5 /play buttons -->
+          </center>
+
+
+
+        </div>
+      </div>
+    </div>
+
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="javascript/app.js"></script>
 
